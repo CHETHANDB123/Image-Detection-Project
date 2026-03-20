@@ -1,4 +1,4 @@
-# Image-Detection-Project
+## Image-Detection-Project
 # Introduction
 In this chapter, we lay the groundwork for our project by describing the field and technological
 environment of multimodal deep learningmbased automated content moderation. We highlight
@@ -85,3 +85,30 @@ Multimodal Dataset (Image + Text)
 The combined assessment consisted of 3,000 memes with text on them that were categorized
 as Safe/Unsafe. The extracted modalities were text (OCR + manual transcription) and image
 pixels 
+
+
+
+#Framework and System Design
+The chapter extensively elaborates on the proposed design and system layout of the Mul
+timodal Content Moderation Framework that connects the latest transformer based models
+namely, BERT for textual content comprehension and ViT for analysis of images through the
+holistic Hugging Face ecosystem. The system is built to manage massive amounts of varied
+social media data, uncover toxic or harmful content, and produce precise moderation decisions
+based on the pros of BERT’s contextual comprehension and ViT’s fine grained visual represen
+tation. The integration of both models guarantees that the system can recognize both, through
+the use of different methods, violations in textual content that are overt and, also, in the case
+of the context-dependent and subtle memes and multimodal content, which are not so easily
+interpreted.
+The system is divided into distinct processing stages, which correspond to the actual work
+f
+low of multimodal moderation. These stages are text preprocessing, feature extraction using
+BERT, image normalization, generation of visual embedding through ViT, and a fusion layer
+that combines both representations prior to final classification. Every single stage aids in the
+detection of linguistic and visual cues in social media content, so that harmful texts, misleading
+pictures, and multimodal cues are all caught without difficulties. The design is so that each
+part is able to do its particular analysis while at the same time being part of the overall mod
+erating decision, which allows for the smooth integration of text and image signals within one
+processing pipeline.
+The whole workflow is backed by diagrams of both architecture and behaviors that show in
+detail how unprocessed text and images go through the system and are changed into valuable
+embeddings for moderation. These illustrations serve to reveal the interaction of BERT and
